@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TempConverterComponent } from '../temp-converter/temp-converter.component';
+
 
 @Component({
   selector: 'app-home-page',
