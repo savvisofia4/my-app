@@ -1,0 +1,14 @@
+<div id="h">
+    <form [formGroup]="clientForm" (ngSubmit)="onSubmit()">
+     <input type="String" placeholder="name" #input formControlName="name">
+      <input type="Number" placeholder="phone" #input formControlName="phone">
+      <select formControlName="maritalStatus">
+         <option value="Married">Married</option>
+         <option value="Unmarried">Unmarried</option>
+         <option value="Divorced">Divorced</option>
+       </select>
+       <button type="submit">OK</button>
+    </form>
+    <p>{{this.cliList}}</p>
+</div>
+{{cliList}}

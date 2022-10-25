@@ -1,1 +1,16 @@
-<p>courses works!</p>
+<div class="container">
+<h1 class="title">List of courses</h1>
+   <ul>
+
+      <li style="display: inline-block; " *ngFor="let course of List">
+        <div class="w3-container">
+          <div class="w3-container w3-red">
+            <h1>{{course}}</h1>  
+          </div>
+          <img src="/assets/{{course}}.jpg" alt="{{course}}" />
+          <h5><button type="button" class="button" (click)="goToCourse()" clickable>Enroll</button></h5>
+        </div>
+      </li>
+      
+  </ul> 
+</div>

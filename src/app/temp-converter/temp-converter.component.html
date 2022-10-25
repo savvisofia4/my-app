@@ -1,0 +1,13 @@
+<div>
+    <form [formGroup]="degreeForm " (ngSubmit)="onSubmit()">
+        <input type="number" placeholder="Degrees" id="input" name="input" value=20 #input formControlName="degree">
+        <label for="module">Input is in:</label>
+        <select id="module" name="module" formControlName="type">
+            <option value="Fahreneit">Fahreneit</option>
+           <option value="Celsius">Celsius</option>
+     </select>
+     <button type="submit">Convert</button>
+    </form>
+
+    <p>{{output}}</p>
+</div>
